@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>The Itinerary</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- ADD RESPONSIVE STUFF HERE -->
+    <head>
+        <meta charset="UTF-8">
+        <title>The Itinerary</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
 
-</head>
-<body>
-  <h1>THE ITINERARY</h1>
+      </head>
+        <div id= "login">
+        <h1>THE ITINERARY</h1>
+            <div><button type="Submit" id="profile-button">My Profile</button><href="endpoint.html"></div>
+        </div>
+
+  
 
   <nav>
 
@@ -29,85 +32,60 @@
   </div>
 
 </nav>
-
-  <main>
+<body>
+  <div class="sideBySide">
+    <div class= "upcomingBox">
+      <h3>Your Bookings</h3>
   
-   <form>
-      <div class="flex-container">
-          <div class="flex-row"><div><h3>UPCOMING EVENTS</h3></div>
-          <div class="flex-row"><div><h3>RECCOMMENDED</h3></div>
-          <div class="flex-row"><div><h3>BUDGET</h3></div>
+      <div id= "Future">
+          <p>Upcoming Travel</p>
+          <div><h5><b>DEC 01-</b> QF400 to MEL</h5></div>
+          <div class = "flex-row"><button type= "Details"> DETAILS</button><p><a href="https://qantas.com"></a></p></div>
         </div>
+  
+      <div id= "pastTravel">
+        <p>Past Travel:</p>
+        <div><h5>Train to Newcastle</h5></div>
+        <div class = "flex-row"><button type= "Details"> DETAILS</button></div>
+      </div>
       
-      </div>
-      <!-- <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name here">
-        <div class="messages"></div>
-      </div>
-      <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username here">
-        <div class="messages"></div>
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email here">
-        <div class="messages"></div>
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password here">
-        <div class="messages"></div>
-      </div>
-      <div class="form-group">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="">Choose Country</option>
-          <option value="AF">Afghanistan</option>
-          <option value="AX">Åland Islands</option>
-          <option value="AL">Albania</option>
-          <option value="DZ">Algeria</option>
-          <option value="AS">American Samoa</option>
-          <option value="AD">Andorra</option>
-          <option value="AO">Angola</option>
-          <option value="AI">Anguilla</option>
-          <option value="AQ">Antarctica</option>
-          <option value="AG">Antigua and Barbuda</option>
-          <option value="AR">Argentina</option>
-          <option value="AM">Armenia</option>
-          <option value="AW">Aruba</option>
-          <option value="AU">Australia</option>
-          <option value="AT">Austria</option>
-          <option value="AZ">Azerbaijan</option>
-        </select>
-        <div class="messages"></div>
-      </div>
-      <div class="form-group">
-        <label for="postcode">Postcode <span>Optional</span></label>
-        <input type="number" id="postcode" name="postcode" placeholder="Enter your postcode here">
-        <div class="messages"></div>
-      </div>
+    </div>
+    <div class="budgetBox"> 
+        <div><h2>MY BUDGET</h2></div>
+        <div class= "Budget">
+            <br>
+            <h3>The Itinerary Budget Tool</h3>
+            <div class="flex-row"> <button type="Submit">ADD A BUDGET</button></div>
 
+           <div class= "flex-row"><img src="logo.png" width="300" height="350"></img><p><a href="https://yetanothervisarun.com/wp-content/uploads/2017/08/nomad-budget-travel-expense-tracker."></a></p>
+          </div>
+          </div>
+  </div>
+  </div>
+
+      <div class= "recommendationsBox">
+          <h2>Because you Liked Tropical Getaways</h2>
+          <div><img src="https://source.unsplash.com/200x200/?Beach"><h3>Tahiti</h3></div>
+          <div><img src="https://source.unsplash.com/200x200/?Fish"><h3>The Great Barrier Reef</h3></div>
+        </div>
+
+        <div class= "featuredBox">
+            <h2>Go on the holiday of your dreams</h2>
+            <br>
+            <div><img src="https://source.unsplash.com/200x200/?bali"><h3>Bali</h3></div>
+            <div><img src="https://source.unsplash.com/200x200/?japan"><h3>Japan</h3></div>
+            <div><img src="https://source.unsplash.com/200x200/?Paris"><h3>Paris</h3></div>
+            <div><img src="https://source.unsplash.com/200x200/?NewYork"><h3>New York</h3></div>
+  
+          </div>
+
+  <script>
+        const button = document.getElementById('profile-button');
+        button.innerText = localStorage.getItem('name') + "'s Profile";
+  </script>
 
   </main>
-     
-    </form>
+  <footer>
 
-    
-
-
-
-  <-- ADD THE TILT JS LIBRARY HERE -->
-  <!-- <script type="text/javascript" src="vanilla-tilt.js"></script> -->
-
-
-
-  <!-- ADD THE VALIDATE JS LIBRARY HERE -->
-
-
-  <!-- ADD THE SCRIPT.JS FILE HERE -->
-  
-
-</body>
+  </footer>
 </html>

@@ -5,32 +5,49 @@
         <title>The Itinerary</title>
         <link rel="stylesheet" type="text/css" href="style.css">
 
-        </head>
+      </head>
+
+        <div id= "login">
         <h1>THE ITINERARY</h1>
-        <div id= "personalise">
-            <div><button type="Submit">Login</div>
-            <div class="flex-row"> <button type="Submit">SignUp</button></div>
         </div>
-    </head>
-
-    <body>
 
 
-     
+    <div class="sideBySide">
+    <div class= "boxLeft">
+    <figure>
+        <img src="worldMap.jpg" width="500" height="450"></img><p><a href="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/world-map-blue-marianna-mills.jpg"></a></p>
+    </figure>
 
-      <div id= "specials">
-          <p>Here's What's New</p>
-          <div class="flex-row"><img src="https://source.unsplash.com/200x200/?bali"><h3>Bali</h3></div>
-          <div class="flex-row"><img src="https://source.unsplash.com/200x200/?japan"><h3>Japan</h3></div>
-    
-        </div>
-      <nav>
-  <div class="flex-container"> 
-        <div class="flex-row"> <button type="Submit">BOOK</button></div>
   </div>
 
+
+      <div class= "boxRight">
+   <p>Tell us where you want to go...</p>
+    <p>And we'll sort the rest .... </p>    
+    <form action="signup.html">
+
+         <div class= "want">
   
+        <input type="Want" id="Want" name="I want to go to...." placeholder="I want to go to...">
+        <div class="messages"></div>
 
- 
-  </nav>
+        <input type="submit" id="go" value="Go"> 
+          
 
+        </div>
+    </form>
+
+</div>
+
+  <script type="text/javascript" src="./script.js"></script>
+  <script>
+  
+  const button = document.getElementById('go');
+  button.addEventListener("click", (ev) => {
+    const textField = document.getElementById("place");
+    console.log(textField.value);
+    localStorage.setItem('place', textField.value);
+  });
+  
+  </script>
+  </html>
