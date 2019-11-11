@@ -147,13 +147,13 @@ button[type='Details'] {
 
 .boxRight{
   background-color:white;
+  padding-top: 50px;
   text-align: left;
-  margin-left: 0%;
+  margin-right: 20%;
   float:right;
-  width: 60%;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  padding-top: 10%;
   font-size: 25px;
   font-family: Verdana;
   display:flex;
@@ -163,11 +163,9 @@ button[type='Details'] {
 }
 
 .boxLeft {
-  margin-right: 10%;
   float: left;
   width: 50%;
   background-color: white;
-  text-align: left;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
